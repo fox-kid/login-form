@@ -126,7 +126,6 @@ body {
 }
 .options__choice {
   display: flex;
-  flex-direction: row-reverse;
   position: relative;
   height: 20px;
 }
@@ -238,5 +237,18 @@ body {
   }
   .form__wrapper {
     max-width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .options {
+    flex-direction: column;
+  }
+  .options__choice {
+    -webkit-margin-after: 10px;
+            margin-block-end: 10px;
+  }
+  .options__choice:last-child {
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

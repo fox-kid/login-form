@@ -139,7 +139,6 @@ body {
 
     &__choice {
         display: flex;
-        flex-direction: row-reverse;
         position: relative;
         height: 20px;
     }
@@ -279,6 +278,20 @@ body {
     .form {
         &__wrapper {
             max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .options {
+        flex-direction: column;
+
+        &__choice {
+            margin-block-end: 10px;
+        }
+
+        &__choice:last-child {
+            margin-block-end: 0;
         }
     }
 }
