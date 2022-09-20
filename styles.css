@@ -228,4 +228,15 @@ body {
 }
 .social__image--google {
   background-image: url(./images/google.svg);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 540px;
+  }
+  .form__wrapper {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
