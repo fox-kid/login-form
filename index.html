@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts,_icomoon,_style.css+css,_owl.carousel.min.css+css,_bootstrap.min.css+css,_style.css.pagespeed.cc.Gajl4v2LrE.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <aside class="image">
+            <img src="./images/desktop.svg" alt="Work at desktop">
+        </aside>
+        <div class="form">
+            <div class="form__wrapper">
+                <div class="form__header">
+                    <h3 class="form__title">Sign In</h3>
+                    <p class="form__text">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+                </div>
+                <form class="login">
+                    <div class="login__group login__group--first">
+                        <label for="username" class="login__label" id="usernameLabel">Username</label>
+                        <input type="text" name="username" id="username" class="login__input" onkeyup="moveLabel()">
+                    </div>
+                    <div class="login__group login__group--second">
+                        <label for="password" class="login__label" id="passwordLabel">Password</label>
+                        <input type="password" name="password" id="password" class="login__input" onkeyup="moveLabel()">
+                    </div>
+                    <div class="options">
+                        <div class="options__choice">
+                            <label for="rememberMe" class="options__label">
+                                <span class="options__title">Remember me</span>
+                                <span class="options__checkmark" id="checkmark"></span>
+                            </label>
+                            <input type="checkbox" name="rememberMe" id="rememberMe" class="options__input" onclick="colorCheckbox()">
+                        </div>
+                        <a href="#" class="options__choice options--link">Forgot Password</a>
+                    </div>
+                    <input type="submit" class="button button--primary" value="Log In">
+                    <span class="login__text">— or login with —</span>
+                    <div class="social">
+                        <div class="social__option">
+                            <a href="#" class="social__link social__link--facebook">
+                                <span class="social__image social__image--facebook"></span>
+                            </a>
+                        </div>
+                        <div class="social__option">
+                            <a href="#" class="social__link social__link--twitter">
+                                <span class="social__image social__image--twitter"></span>
+                            </a>
+                        </div>
+                        <div class="social__option">
+                            <a href="#" class="social__link social__link--google">
+                                <span class="social__image social__image--google"></span>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>

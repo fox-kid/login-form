@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 250, 251);
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+  display: flex;
+  padding: 112px 0;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.image {
+  flex: 1;
+}
+.image img {
+  width: 100%;
+  height: auto;
+  padding-inline: 15px;
+}
+
+.form {
+  flex: 1;
+  display: grid;
+}
+.form__wrapper {
+  margin: auto;
+  max-width: 66.67%;
+  width: 100%;
+  padding-inline: 15px;
+}
+.form__header {
+  -webkit-margin-after: 24px;
+          margin-block-end: 24px;
+}
+.form__title {
+  color: rgb(33, 37, 41);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+  -webkit-margin-after: 8px;
+          margin-block-end: 8px;
+}
+.form__text {
+  color: #b3b3b3;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.button {
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(230, 230, 230);
+  transition: 0.1s all ease;
+}
+.button--primary {
+  background-color: #6c63ff;
+  color: rgb(255, 255, 255);
+}
+.button--primary:hover {
+  background-color: #483dff !important;
+}
+
+.button:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+.login__group {
+  padding: 15px;
+  position: relative;
+  background-color: rgb(237, 242, 245);
+  border-bottom: 1px solid #e6edf1;
+}
+.login__group--first {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.login__group--second {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-margin-after: 28px;
+          margin-block-end: 28px;
+}
+.login__label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 15px;
+  transition: 0.3s all ease;
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+}
+.login__input {
+  background-color: rgb(237, 242, 245);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  height: 44px;
+}
+.login__text {
+  display: block;
+  margin-block: 24px;
+  color: #6c757d;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  -webkit-margin-after: 48px;
+          margin-block-end: 48px;
+}
+.options__choice {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  height: 20px;
+}
+.options__choice:hover .options__checkmark {
+  background-color: rgb(204, 204, 204);
+}
+.options__label {
+  cursor: pointer;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(179, 179, 179);
+}
+.options__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.options__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 4px;
+  transition: 0.1s all ease;
+}
+.options__checkmark[selected]:after {
+  display: block;
+  content: "";
+  background: url(./images/checkmark.svg);
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.options--link {
+  font-size: 14px;
+  color: rgb(136, 136, 136);
+}
+.options--link:hover {
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+}
+.social__option {
+  cursor: pointer;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  -webkit-margin-end: 4px;
+          margin-inline-end: 4px;
+  border-radius: 50%;
+  background-color: rgb(230, 230, 230);
+  transition: 0.3s all ease;
+}
+.social__link--facebook {
+  background-color: #3b5998;
+}
+.social__link--facebook:hover {
+  background-color: #344e86;
+}
+.social__link--twitter {
+  background-color: #1da1f2;
+}
+.social__link--twitter:hover {
+  background-color: #0d95e8;
+}
+.social__link--google {
+  background-color: #ea4335;
+}
+.social__link--google:hover {
+  background-color: #e82e1e;
+}
+.social__image {
+  display: block;
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+}
+.social__image--facebook {
+  background-image: url(./images/facebook.svg);
+}
+.social__image--twitter {
+  background-image: url(./images/twitter.svg);
+}
+.social__image--google {
+  background-image: url(./images/google.svg);
+}/*# sourceMappingURL=styles.css.map */
